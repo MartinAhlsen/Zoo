@@ -1,4 +1,4 @@
-function Animal(name, group, food, description, length, weight, found) {
+function Animal(name, group, food, description, length, weight, found, imgSmall, imgLarge) {
     this.name = name;
     this.group = group;
     this.food = food;
@@ -6,6 +6,8 @@ function Animal(name, group, food, description, length, weight, found) {
     this.length = length;
     this.weight = weight;
     this.found = found;
+    this.imgSmall = imgSmall;
+    this.imgLarge = imgLarge;
 }
 
 let cassowary = new Animal("Cassowary", 
@@ -15,3 +17,20 @@ let cassowary = new Animal("Cassowary",
                             "1.7m",
                             "44kg",
                             "Queensland")
+
+let animalArray = ["cassowary"];
+
+
+let generateDivs = console.log("The " + animal.name + " is in the" + animal.group + "group");
+
+function cycleArray() {
+    animalArray.forEach(animal => {
+        
+    });
+}
+
+function logTheAnimals(animal) {
+    console.log("The " + animal.name + " is in the" + animal.group + "group");
+}
+
+cycleArray(generateDivs)
