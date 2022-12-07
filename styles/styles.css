@@ -144,7 +144,7 @@ main {
 }
 
 .main-content {
-    background-image: url(../resources/background\ photo.webp);
+    background-image: url(../resources/background_photo_dark.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -155,9 +155,17 @@ main {
     padding: 80px 240px;
 }
 
-.text-main-content {
+.text-main-content, .food {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
+}
+
+.group-link {
+    color: var(--thitd-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform:uppercase;
 }
 
 .hamburger-btn {
@@ -207,6 +215,8 @@ main {
 .show {
    display: block; 
 }
+
+
 
 @media screen and (max-width: 550px) {
     .menu-topnav {

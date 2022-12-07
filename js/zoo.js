@@ -91,7 +91,7 @@ function generateList(animalArray) {
                     rubrik.textContent = element.name;
                     textArea.textContent = element.shortDescription;
                     foodText.textContent = element.food;
-                    groupLink.textContent = element.group;
+                    groupLink.textContent = "learn more about all " + element.group + "s";
                     groupLink.setAttribute("href", "html/" + element.group + "s.html");
                     animalImage.textContent = undefined;
                 }
