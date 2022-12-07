@@ -5,36 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script src="js/zoo.js" defer></script>
+    <script src="/js/Zoo" defer></script>
     <title>Zoo</title>
 </head>
 <body>
-    
     <header>
-        <div class="top-navbar">
-            <div class="logo-navbar">
-               <a href="../index.html"><img src="resources/zoo_logo_3_white.svg"width="200px"></a>
-            </div>
-
-            <input class="hamburger-btn" type="checkbox" id="hamburger-btn"/>
-            <label class="hamburger-container" for="hamburger-btn"><span class="hamburger-icon"></span></label>    
-            <label class="hamburger-container" for="hamburger-btn"><span class="close-icon"></span></label>    
-            
-            <div class="menu-topnav">
-                <a href="html/mammals.html" id="mammals" class="animal-family">Mammals</a> 
-                <a href="html/reptiles.html" id="reptile" class="animal-family">Reptile</a> 
-                <a href="html/birds.html" id="birds" class="animal-family">Birds</a> 
-            </div>
-        </div>
+        <h1>The Zoo</h1>
+        <h2>Homepage</h2>
     </header>
+
+    <ul class="navbar">
+        <li class="navbar-page" id="home">home</li>
+        <li class="navbar-page" id="mammals">Mammals</li>
+        <li class="navbar-page" id="reptiles">Reptiles</li>
+        <li class="navbar-page" id="birds">Birds</li>
+    </ul>
 
     <main>
         <div class="side-bar">
-            <div class="sidbar-titel">Learn about all animals</div>
             <ul class="side-navbar">
                 <li class="navbar-page-side" id="mammals">Mammals</li>
-                    <ul class="animals" id="animals">
-                        <li class="animal" id="animal">echidna</li>
+                    <ul class="animals" id="">
+                        <li class="animal" id="animal">Animal 1</li>
                         <li class="animal" id="animal">Animal 2</li>
                         <li class="animal" id="animal">Animal 3</li>
                     </ul>
@@ -55,20 +47,14 @@
 
         <div class="main-content">
             <div class="homepage-content" id="homepage-content">
-                <h1>WELCOME TO IDAMALI ZOO</h1>
-                <span class="text-main-content">
-                    Exhibition of Australin animals the summer of 2023. 
-                    <p>Lear all about our new animals here!</p>
-                </span>
+                WELCOME
             </div>
         </div>
 
     </main>
 
     <footer>
-        <h3> Copyright &#169; 2022 Idamai Zoo AB</h3>
-        <a href="../index.html"><img src="resources/zoo_logo_3_white.svg"width="100px"></a>
-        <h3>Exhibition start 1 June 2023</h3>
+        <h3>&#169; Copyright The Zoo Company</h3>
     </footer>
 </body>
 </html>
