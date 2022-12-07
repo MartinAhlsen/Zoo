@@ -60,6 +60,9 @@ let textArea = document.getElementById("text-main-content");
 rubrik.textContent = "WELCOME to Idamali Zoo";
 textArea.textContent = "Exhibition of Austrilan Animals the summer of 2023! Learn all about the animals here!";
 
+
+
+
 // function cycleArray() {
 //     animalArray.forEach(animal => {
         
@@ -75,8 +78,8 @@ function generateList(animalArray) {
         animalArray.forEach(element => {    
             createListItem(element.name, element.group);
             document.getElementById(removeBlank(element.name)).addEventListener("click", function() {
-            rubrik.textContent = element.name;
-            textArea.textContent = element.shortDescription;
+                rubrik.textContent = element.name;
+                textArea.textContent = element.shortDescription;
             });
         }); 
 }
@@ -95,6 +98,4 @@ function removeBlank(stringToModify) {
 }
 
 generateList(animalArray);
-hideAnimal(animalArray) 
-
-
+//hideAnimal(animalArray)
