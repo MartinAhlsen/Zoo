@@ -79,7 +79,7 @@ main {
 
 .side-bar {
      position: absolute;
-     left: -280px;
+     left: -290px;
      top: 20%;
      border-radius: 50%;
      border-radius: 70px;
@@ -117,10 +117,10 @@ main {
 }
 
 .sidbar-titel {
-    left: 200px;
+    left: 210px;
     position: absolute;
     rotate: 270deg;
-    top: 210px;
+    top: 240px;
     font-weight: 600;
     width: 200px;
     transition: transform 500ms;
