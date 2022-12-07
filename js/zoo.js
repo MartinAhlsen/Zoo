@@ -57,6 +57,9 @@ let animalArray = [cassowary, echidna, frillNeckedLizard]; // Lista med alla dju
 
 let rubrik = document.getElementById("h1");
 let textArea = document.getElementById("text-main-content");
+let foodText = document.getElementById("food");
+let groupLink = document.getElementById("group-link");
+let animalImage = document.getElementById("image-container");
 rubrik.textContent = "WELCOME to Idamali Zoo";
 textArea.textContent = "Exhibition of Austrilan Animals the summer of 2023! Learn all about the animals here!";
 
@@ -78,8 +81,20 @@ function generateList(animalArray) {
         animalArray.forEach(element => {    
             createListItem(element.name, element.group);
             document.getElementById(removeBlank(element.name)).addEventListener("click", function() {
-                rubrik.textContent = element.name;
-                textArea.textContent = element.shortDescription;
+                if (rubrik.textContent === element.name) {
+                    rubrik.textContent = "WELCOME to Idamali Zoo";
+                    textArea.textContent = "Exhibition of Austrilan Animals the summer of 2023! Learn all about the animals here!";
+                    foodText.textContent = "";
+                    groupLink.textContent = "";
+                    animalImage.textContent = undefined;
+                } else {
+                    rubrik.textContent = element.name;
+                    textArea.textContent = element.shortDescription;
+                    foodText.textContent = element.food;
+                    groupLink.textContent = element.group;
+                    groupLink.setAttribute("href", "html/" + element.group + "s.html");
+                    animalImage.textContent = undefined;
+                }
             });
         }); 
 }
