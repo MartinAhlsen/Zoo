@@ -100,16 +100,12 @@ main {
 }
 
 .navbar-page-side {
-    cursor:pointer;
+    cursor:default;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 40px 0px 5px 114px;
-}
-
-.navbar-page-side:hover{
-    color: var(--thitd-color);
 }
 
 .sidbar-titel {
@@ -204,6 +200,13 @@ main {
     display: none;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+   display: block; 
+}
 
 @media screen and (max-width: 550px) {
     .menu-topnav {

@@ -55,6 +55,11 @@ let frillNeckedLizard = new Animal(
 
 let animalArray = [cassowary, echidna, frillNeckedLizard]; // Lista med alla djur som objekt
 
+let rubrik = document.getElementById("h1");
+let textArea = document.getElementById("text-main-content");
+rubrik.textContent = "WELCOME to Idamali Zoo";
+textArea.textContent = "Exhibition of Austrilan Animals the summer of 2023! Learn all about the animals here!";
+
 // function cycleArray() {
 //     animalArray.forEach(animal => {
         
@@ -69,8 +74,13 @@ function generateList(animalArray) {
     if (Array.isArray(animalArray))    
         animalArray.forEach(element => {    
             createListItem(element.name, element.group);
-        });
+            document.getElementById(removeBlank(element.name)).addEventListener("click", function() {
+            rubrik.textContent = element.name;
+            textArea.textContent = element.shortDescription;
+            });
+        }); 
 }
+
 
 function createListItem(animalName, tagGroup) {
     let createLi = document.createElement("li");
@@ -84,5 +94,7 @@ function removeBlank(stringToModify) {
     return stringToModify.replaceAll(" ", "-");   
 }
 
-generateList(animalArray)
-logTheAnimals(cassowary);
+generateList(animalArray);
+hideAnimal(animalArray) 
+
+
