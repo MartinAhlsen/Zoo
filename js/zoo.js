@@ -1,10 +1,10 @@
-function Animal(name, lifespan, group, food, description, shortDescription, length, weight, found, imgSmall, imgLarge) {
+function Animal(name, lifespan, group, food, description,length, weight, found, imgSmall, imgLarge) {
     this.name = name;
     this.lifespan = lifespan;
     this.group = group;
     this.food = food;
     this.description = description;
-    this.shortDescription = shortDescription;
+    this.shortDescription = description.slice(1, 200);
     this.length = length;
     this.weight = weight;
     this.found = found;
