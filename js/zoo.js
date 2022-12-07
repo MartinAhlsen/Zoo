@@ -68,39 +68,20 @@ function logTheAnimals(animal) {
 function generateList(animalArray) {
     if (Array.isArray(animalArray))    
         animalArray.forEach(element => {    
-            createListItem(element.name);
+            createListItem(element.name, element.group);
         });
 }
 
-function createListItem(animalName) {
+function createListItem(animalName, tagGroup) {
     let createLi = document.createElement("li");
     createLi.classList.add(removeBlank(animalName), "animal");
     createLi.setAttribute("id", removeBlank(animalName));
     createLi.textContent = animalName;
-    document.getElementById("animals").appendChild(createLi);
+    document.getElementById(tagGroup).appendChild(createLi);
 }
 
 function removeBlank(stringToModify) {
-    return stringToModify.replaceAll(" ", "-");
-
-    // function generateList(animalArray) {
-//     if (Array.isArray(animalArray))    
-//         animalArray.forEach(element => {    
-//             createListItem(element.name, element.group);
-//         });
-// }
-
-// function createListItem(animalName, targetGroup) {
-//     let createLi = document.createElement("li");
-//     createLi.classList.add(removeBlank(animalName), "animal");
-//     createLi.setAttribute("id", removeBlank(animalName));
-//     createLi.textContent = animalName;
-//     document.getElementById(targetGroup).appendChild(createLi);
-// }
-
-// function removeBlank(stringToModify) {
-//     return stringToModify.replaceAll(" ", "-");
-    
+    return stringToModify.replaceAll(" ", "-");   
 }
 
 generateList(animalArray)
