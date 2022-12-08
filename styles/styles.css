@@ -208,6 +208,29 @@ main {
     display: none;
 }
 
+.small-image {
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    height: 300px;
+    max-width: 430px;
+    margin-top: 50px;
+    display: none;
+}
+
+.small-img-cassowary{
+    background-image: url(../resources/cassowary2.jpg);
+}
+
+.small-img-echidna{
+    background-image: url(../resources/echidna2.jpg);
+}
+
+.small-img-frill-necked-lizard {
+    background-image: url(../resources/Frill-necked\ lizard2.jpg);
+}
+
 .hide {
     display: none;
 }
@@ -215,6 +238,8 @@ main {
 .show {
    display: block; 
 }
+
+
 
 
 
