@@ -86,14 +86,16 @@ function generateList(animalArray) {
                     textArea.textContent = "Exhibition of Austrilan Animals the summer of 2023! Learn all about the animals here!";
                     foodText.textContent = "";
                     groupLink.textContent = "";
-                    animalImage.textContent = undefined;
+                    animalImage.classList.add("hide");
+                    animalImage.classList.remove("show" , removeBlank("small-img-" + element.name).toLowerCase());
                 } else {
                     rubrik.textContent = element.name;
                     textArea.textContent = element.shortDescription;
                     foodText.textContent = element.food;
                     groupLink.textContent = "learn more about all " + element.group + "s";
                     groupLink.setAttribute("href", "html/" + element.group + "s.html");
-                    animalImage.textContent = undefined;
+                    animalImage.classList.remove("hide");
+                    animalImage.classList.add("show" , removeBlank("small-img-" + element.name).toLowerCase());
                 }
             });
         }); 
